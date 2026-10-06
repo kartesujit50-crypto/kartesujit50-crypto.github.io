@@ -1,58 +1,389 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Daily Jankari - हर दिन काम की जानकारी">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Daily Jankari — हर दिन काम की जानकारी</title>
+
+<meta name="description" content="Daily Jankari पर Technology, Jobs, Online Earning, Sports, Trending और Entertainment की आसान हिंदी जानकारी पढ़ें।">
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f6f8;color:#20242a}
-header{background:#111827;color:#fff;padding:24px 5%}
-.logo{font-size:30px;font-weight:800}.tag{color:#cbd5e1;margin-top:8px;font-size:17px}
-nav{background:#fff;padding:13px 5%;box-shadow:0 2px 8px #0001;overflow:auto;white-space:nowrap}
-nav a{display:inline-block;margin-right:22px;text-decoration:none;color:#111827;font-weight:700}
-.hero{padding:55px 5%;background:linear-gradient(135deg,#e0f2fe,#fff)}
-.hero h1{font-size:42px;margin:0 0 14px}.hero p{font-size:19px;color:#475569;max-width:760px;line-height:1.7}
-.container{max-width:1100px;margin:auto;padding:30px 5%}
-h2{font-size:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{background:#fff;border-radius:14px;padding:22px;box-shadow:0 3px 14px #00000012}
-.card h3{margin-top:0}.card p{color:#64748b;line-height:1.6}
-.btn{display:inline-block;margin-top:10px;padding:10px 15px;border-radius:8px;background:#111827;color:#fff;text-decoration:none}
-footer{margin-top:30px;background:#111827;color:#cbd5e1;text-align:center;padding:25px}
-@media(max-width:600px){.hero h1{font-size:32px}.logo{font-size:26px}}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f5f7fa;
+ color:#18202b;
+ line-height:1.7
+}
+header{
+ background:#101827;
+ color:white;
+ padding:28px 18px
+}
+.container{
+ max-width:1100px;
+ margin:auto;
+ padding:0 18px
+}
+.logo{
+ font-size:32px;
+ font-weight:bold
+}
+.tag{
+ color:#cbd5e1;
+ font-size:18px
+}
+nav{
+ background:white;
+ overflow:auto;
+ white-space:nowrap;
+ box-shadow:0 2px 10px #0001
+}
+nav a{
+ display:inline-block;
+ padding:15px 18px;
+ color:#111827;
+ text-decoration:none;
+ font-weight:bold
+}
+nav a:hover{
+ background:#eef2f7
+}
+.hero{
+ padding:55px 0;
+ background:linear-gradient(135deg,#e8f6ff,#fff)
+}
+.hero h1{
+ font-size:42px;
+ line-height:1.25;
+ margin:0 0 15px
+}
+.hero p{
+ font-size:20px;
+ color:#526174
+}
+.search{
+ display:flex;
+ gap:10px;
+ margin-top:25px;
+ max-width:650px
+}
+.search input{
+ flex:1;
+ padding:14px;
+ border:1px solid #ccd5df;
+ border-radius:10px;
+ font-size:16px
+}
+.btn{
+ background:#101827;
+ color:white;
+ border:0;
+ padding:14px 20px;
+ border-radius:10px;
+ font-weight:bold
+}
+main{
+ padding:40px 0
+}
+h2{
+ font-size:32px
+}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:20px
+}
+.card{
+ background:white;
+ padding:22px;
+ border-radius:18px;
+ box-shadow:0 5px 20px #0001
+}
+.card h3{
+ font-size:21px;
+ line-height:1.4
+}
+.card p{
+ color:#5c6878
+}
+.category{
+ font-weight:bold
+}
+.read{
+ display:inline-block;
+ background:#101827;
+ color:white;
+ text-decoration:none;
+ padding:9px 16px;
+ border-radius:9px
+}
+.article{
+ display:none;
+ background:white;
+ padding:28px;
+ margin-top:25px;
+ border-radius:18px
+}
+.article:target{
+ display:block
+}
+.article h2{
+ font-size:30px
+}
+.back{
+ color:#111827;
+ font-weight:bold;
+ text-decoration:none
+}
+footer{
+ margin-top:40px;
+ background:#101827;
+ color:#cbd5e1;
+ padding:35px 0
+}
+footer a{
+ color:white;
+ margin-right:18px
+}
+@media(max-width:800px){
+ .grid{grid-template-columns:1fr 1fr}
+ .hero h1{font-size:35px}
+}
+@media(max-width:550px){
+ .grid{grid-template-columns:1fr}
+ .hero h1{font-size:32px}
+ .search{flex-direction:column}
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="logo">Daily Jankari</div>
-  <div class="tag">हर दिन काम की जानकारी</div>
+<div class="container">
+<div class="logo">Daily Jankari</div>
+<div class="tag">हर दिन काम की जानकारी</div>
+</div>
 </header>
+
 <nav>
-  <a href="#home">Home</a>
-  <a href="#trending">Trending</a>
-  <a href="#technology">Technology</a>
-  <a href="#jobs">Jobs</a>
-  <a href="#earning">Online Earning</a>
-  <a href="#sports">Sports</a>
-  <a href="#entertainment">Entertainment</a>
+<div class="container">
+<a href="#home">Home</a>
+<a href="#trending">🔥 Trending</a>
+<a href="#technology">📱 Technology</a>
+<a href="#jobs">💼 Jobs</a>
+<a href="#earning">💰 Online Earning</a>
+<a href="#sports">🏏 Sports</a>
+<a href="#entertainment">🎬 Entertainment</a>
+</div>
 </nav>
+
 <section class="hero" id="home">
-  <h1>Daily Jankari में आपका स्वागत है</h1>
-  <p>Trending खबरों से लेकर Technology, Jobs, Online Earning, Sports और Entertainment तक—सरल हिंदी में उपयोगी जानकारी।</p>
+<div class="container">
+
+<h1>Daily Jankari में आपका स्वागत है</h1>
+
+<p>
+Trending खबरों से लेकर Technology, Jobs,
+Online Earning, Sports और Entertainment तक —
+सरल हिंदी में उपयोगी जानकारी।
+</p>
+
+<div class="search">
+<input id="search" placeholder="Article खोजें...">
+<button class="btn" onclick="searchArticles()">खोजें</button>
+</div>
+
+</div>
 </section>
+
 <main class="container">
-  <h2>Latest Articles</h2>
-  <div class="grid">
-    <article class="card" id="trending"><h3>🔥 Trending & Viral</h3><p>आज की चर्चित और वायरल जानकारियाँ एक जगह पढ़ें।</p><a class="btn" href="#trending">पढ़ें</a></article>
-    <article class="card" id="technology"><h3>📱 Technology</h3><p>मोबाइल, ऐप्स, इंटरनेट और नई तकनीक से जुड़ी आसान जानकारी।</p><a class="btn" href="#technology">पढ़ें</a></article>
-    <article class="card" id="jobs"><h3>💼 Jobs & Career</h3><p>नौकरी, करियर और skill से जुड़ी उपयोगी जानकारी।</p><a class="btn" href="#jobs">पढ़ें</a></article>
-    <article class="card" id="earning"><h3>💰 Online Earning</h3><p>Blogging, digital work और online earning के तरीकों की जानकारी।</p><a class="btn" href="#earning">पढ़ें</a></article>
-    <article class="card" id="sports"><h3>🏏 Sports</h3><p>क्रिकेट और अन्य खेलों से जुड़ी ताज़ा जानकारी।</p><a class="btn" href="#sports">पढ़ें</a></article>
-    <article class="card" id="entertainment"><h3>🎬 Entertainment</h3><p>फिल्म, वेब सीरीज और मनोरंजन की जानकारी।</p><a class="btn" href="#entertainment">पढ़ें</a></article>
-  </div>
+
+<h2>📰 Latest Articles</h2>
+
+<div class="grid" id="articles">
+
+<div class="card">
+<div class="category">🔥 Trending</div>
+<h3>आज की वायरल खबरों की जानकारी कैसे पाएं?</h3>
+<p>Viral खबर को सही तरीके से verify करने के आसान तरीके।</p>
+<a class="read" href="#article1">पढ़ें</a>
+</div>
+
+<div class="card">
+<div class="category">📱 Technology</div>
+<h3>मोबाइल धीमा हो गया है? तेज करने के 10 तरीके</h3>
+<p>अपने मोबाइल की performance बेहतर करने के आसान उपाय।</p>
+<a class="read" href="#article2">पढ़ें</a>
+</div>
+
+<div class="card">
+<div class="category">💼 Jobs</div>
+<h3>12वीं पास युवाओं के लिए नौकरी ढूँढने के आसान तरीके</h3>
+<p>Job search और interview के लिए उपयोगी जानकारी।</p>
+<a class="read" href="#article3">पढ़ें</a>
+</div>
+
+<div class="card">
+<div class="category">💰 Online Earning</div>
+<h3>घर बैठे ऑनलाइन पैसे कमाने के 7 तरीके</h3>
+<p>Blogging, YouTube, Freelancing और अन्य वैध तरीके।</p>
+<a class="read" href="#article4">पढ़ें</a>
+</div>
+
+<div class="card">
+<div class="category">📱 Technology</div>
+<h3>पुराने मोबाइल को नया जैसा बनाने के 8 तरीके</h3>
+<p>Storage, apps और battery से जुड़े आसान सुझाव।</p>
+<a class="read" href="#article5">पढ़ें</a>
+</div>
+
+<div class="card">
+<div class="category">🏏 Sports</div>
+<h3>क्रिकेट मैच में टीम की जीत की संभावना कैसे समझें?</h3>
+<p>Form, pitch और team combination जैसे factors।</p>
+<a class="read" href="#article6">पढ़ें</a>
+</div>
+
+</div>
+
+<section class="article" id="article1">
+<h2>🔥 आज की वायरल खबरों की जानकारी कैसे पाएं?</h2>
+<p>
+सोशल मीडिया पर रोज बहुत सारी खबरें वायरल होती हैं।
+हर वायरल खबर सही हो यह जरूरी नहीं है।
+</p>
+<h3>खबर verify कैसे करें?</h3>
+<p>
+खबर की तारीख देखें, original source देखें और
+कम से कम दो भरोसेमंद sources से जानकारी मिलाएं।
+</p>
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
+<section class="article" id="article2">
+<h2>📱 मोबाइल धीमा हो गया है? तेज करने के 10 तरीके</h2>
+<p>
+अगर मोबाइल slow हो गया है तो सबसे पहले अनावश्यक
+apps और files हटाएं।
+</p>
+<h3>कुछ आसान उपाय</h3>
+<p>
+Storage खाली रखें, apps update करें, background apps
+कम करें और समय-समय पर मोबाइल restart करें।
+</p>
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
+<section class="article" id="article3">
+<h2>💼 12वीं पास युवाओं के लिए नौकरी ढूँढने के आसान तरीके</h2>
+<p>
+एक अच्छा resume बनाएं और अपनी skills को साफ तरीके से
+लिखें।
+</p>
+<p>
+Verified job websites और कंपनियों की official career
+websites पर vacancies देखें।
+</p>
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
+<section class="article" id="article4">
+<h2>💰 घर बैठे ऑनलाइन पैसे कमाने के 7 तरीके</h2>
+<p>
+इंटरनेट से कमाई के कई वैध तरीके हैं। लेकिन किसी भी
+platform पर पैसे देने से पहले उसकी जांच जरूर करें।
+</p>
+<h3>1. Blogging</h3>
+<p>अपनी website पर useful और original articles लिखें।</p>
+
+<h3>2. YouTube</h3>
+<p>अपने knowledge या skill से videos बनाएं।</p>
+
+<h3>3. Freelancing</h3>
+<p>Writing, editing, design और दूसरे skills से काम करें।</p>
+
+<h3>4. Online Teaching</h3>
+<p>जिस विषय में जानकारी है उसे online पढ़ाएं।</p>
+
+<h3>5. Affiliate Marketing</h3>
+<p>Verified affiliate programs से commission कमाया जा सकता है।</p>
+
+<p>
+⚠️ पैसे कमाने के नाम पर advance payment मांगने वाले
+फर्जी offers से सावधान रहें।
+</p>
+
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
+<section class="article" id="article5">
+<h2>📱 पुराने मोबाइल को नया जैसा बनाने के 8 तरीके</h2>
+<p>
+अनावश्यक apps हटाएं, storage खाली रखें और software
+updates install करें।
+</p>
+<p>
+मोबाइल को ज्यादा गर्म होने से बचाएं और जरूरी data का
+backup रखें।
+</p>
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
+<section class="article" id="article6">
+<h2>🏏 क्रिकेट मैच में टीम की जीत की संभावना कैसे समझें?</h2>
+<p>
+Team की recent form, playing XI, pitch, weather और
+venue record जैसे factors देखें।
+</p>
+<p>
+सिर्फ prediction के आधार पर पैसे लगाने से बचें।
+</p>
+<a class="back" href="#home">← वापस जाएँ</a>
+</section>
+
 </main>
-<footer>© 2026 Daily Jankari — हर दिन काम की जानकारी</footer>
+
+<footer>
+<div class="container">
+
+<p>
+<a href="#home">Home</a>
+<a href="#home">About Us</a>
+<a href="#home">Contact Us</a>
+<a href="#home">Privacy Policy</a>
+<a href="#home">Disclaimer</a>
+</p>
+
+<p>© 2026 Daily Jankari — All Rights Reserved.</p>
+
+</div>
+</footer>
+
+<script>
+function searchArticles(){
+
+let text=document.getElementById("search").value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(function(card){
+
+let content=card.innerText.toLowerCase();
+
+if(content.includes(text)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+</script>
+
 </body>
 </html>
