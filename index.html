@@ -1,217 +1,63 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
- <meta name="google-site-verification" content="ZQ0yQfpAJp4xqGKk4lr0OyXjjhAdrHH7-2-81O1BIvM" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+मेरी वेबसाइट "Daily Jankari — हर दिन काम की जानकारी" की index.html फाइल को पूरी तरह ठीक और व्यवस्थित करो।
 
-<title>Daily Jankari — हर दिन काम की जानकारी</title>
+बहुत जरूरी:
+- मौजूदा वेबसाइट का design, CSS, header, footer, search bar और बाकी content बिना जरूरत बदले।
+- केवल HTML structure की गलतियां ठीक करो।
+- कोई duplicate article card नहीं होना चाहिए।
+- सभी opening और closing tags सही होने चाहिए।
+- Latest Articles section सही तरीके से बंद होना चाहिए।
+- Article sections Latest Articles के बाहर होने चाहिए।
+- Mobile और Blogging के नए article cards जरूर रखें।
+- Existing article content को delete मत करो।
+- सभी internal links काम करने चाहिए।
 
-<meta name="description" content="Daily Jankari पर Technology, Jobs, Online Earning, Sports, Trending और Entertainment की आसान हिंदी जानकारी पढ़ें।"
- <meta property="og:title" content="Daily Jankari — हर दिन काम की जानकारी">
-<meta property="og:description" content="Technology, Jobs, Online Earning, Sports और अन्य उपयोगी जानकारी आसान हिंदी में।">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kartesujit50-crypto.github.io/">>
-<meta name="keywords" content="Daily Jankari, हिंदी जानकारी, Technology, Jobs, Online Earning, Sports, Blogging">
-<meta name="author" content="Daily Jankari">
-<style>
-*{box-sizing:border-box}
-body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#f5f7fa;
- color:#18202b;
- line-height:1.7
-}
-header{
- background:#101827;
- color:white;
- padding:28px 18px
-}
-.container{
- max-width:1100px;
- margin:auto;
- padding:0 18px
-}
-.logo{
- font-size:32px;
- font-weight:bold
-}
-.tag{
- color:#cbd5e1;
- font-size:18px
-}
-nav{
- background:white;
- overflow:auto;
- white-space:nowrap;
- box-shadow:0 2px 10px #0001
-}
-nav a{
- display:inline-block;
- padding:15px 18px;
- color:#111827;
- text-decoration:none;
- font-weight:bold
-}
-nav a:hover{
- background:#eef2f7
-}
-.hero{
- padding:55px 0;
- background:linear-gradient(135deg,#e8f6ff,#fff)
-}
-.hero h1{
- font-size:42px;
- line-height:1.25;
- margin:0 0 15px
-}
-.hero p{
- font-size:20px;
- color:#526174
-}
-.search{
- display:flex;
- gap:10px;
- margin-top:25px;
- max-width:650px
-}
-.search input{
- flex:1;
- padding:14px;
- border:1px solid #ccd5df;
- border-radius:10px;
- font-size:16px
-}
-.btn{
- background:#101827;
- color:white;
- border:0;
- padding:14px 20px;
- border-radius:10px;
- font-weight:bold
-}
-main{
- padding:40px 0
-}
-h2{
- font-size:32px
-}
-.grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:20px
-}
-.card{
-    background:white;
-    padding:22px;
-    border-radius:18px;
-    box-shadow:0 5px 20px #0001;
+Latest Articles में कुल 8 cards होने चाहिए और इसी क्रम में होने चाहिए:
 
-}
-.card h3{
- font-size:21px;
- line-height:1.4
-}
-.card p{
- color:#5c6878
-}
-.category{
- font-weight:bold
-}
-.read{
- display:inline-block;
- background:#101827;
- color:white;
- text-decoration:none;
- padding:9px 16px;
- border-radius:9px
-}
-.article{
- display:none;
- background:white;
- padding:28px;
- margin-top:25px;
- border-radius:18px
-}
-.article:target{
- display:block
-}
-.article h2{
- font-size:30px
-}
-.back{
- color:#111827;
- font-weight:bold;
- text-decoration:none
-}
-footer{
- margin-top:40px;
- background:#101827;
- color:#cbd5e1;
- padding:35px 0
-}
-footer a{
- color:white;
- margin-right:18px
-}
-@media(max-width:800px){
- .grid{grid-template-columns:1fr 1fr}
- .hero h1{font-size:35px}
-}
-@media(max-width:550px){
- .grid{grid-template-columns:1fr}
- .hero h1{font-size:32px}
- .search{flex-direction:column}
-}
-</style>
-</head>
+1. 📱 Mobile से घर बैठे पैसे कैसे कमाएँ?
+Link:
+mobile-se-ghar-baithe-paise-kaise-kamaye.html
 
-<body>
+2. 📝 Blogging से पैसे कैसे कमाएँ?
+Link:
+blogging-se-paise-kaise-kamaye.html
 
-<header>
-<div class="container">
-<div class="logo">Daily Jankari</div>
-<div class="tag">हर दिन काम की जानकारी</div>
-</div>
-</header>
+3. 🔥 Trending
+Title:
+आज की वायरल खबरों की जानकारी कैसे पाएं?
+Link:
+#article1
 
-<nav>
-<div class="container">
-<a href="#home">Home</a>
-<a href="#trending">🔥 Trending</a>
-<a href="#technology">📱 Technology</a>
-<a href="#jobs">💼 Jobs</a>
-<a href="#earning">💰 Online Earning</a>
-<a href="#sports">🏏 Sports</a>
-<a href="#entertainment">🎬 Entertainment</a>
-<a href="#about">About Us</a>
-<a href="#contact">Contact</a>
-<a href="#privacy">Privacy</a>
-<a href="#disclaimer">Disclaimer</a> 
-</div>
-</nav>
+4. 📱 Technology
+Title:
+मोबाइल धीमा हो गया है? तेज करने के 10 तरीके
+Link:
+#article2
 
-<section class="hero" id="home">
-<div class="container">
+5. 💼 Jobs
+Title:
+12वीं पास युवाओं के लिए नौकरी ढूँढने के आसान तरीके
+Link:
+#article3
 
-<h1>Daily Jankari में आपका स्वागत है</h1>
+6. 💰 Online Earning
+Title:
+घर बैठे ऑनलाइन पैसे कमाने के 7 तरीके
+Link:
+#article4
 
-<p>
-Trending खबरों से लेकर Technology, Jobs,
-Online Earning, Sports और Entertainment तक —
-सरल हिंदी में उपयोगी जानकारी।
-</p>
+7. 📱 Technology
+Title:
+पुराने मोबाइल को नया जैसा बनाने के 8 तरीके
+Link:
+#article5
 
-<div class="search">
-<input id="search" placeholder="Article खोजें...">
-<button class="btn" onclick="searchArticles()">खोजें</button>
-</div>
+8. 🏏 Sports
+Title:
+क्रिकेट मैच में टीम की जीत की संभावना कैसे समझें?
+Link:
+#article6
 
-</div>
-</section>
-
-<main class="container">
+Latest Articles का सही HTML structure यह होना चाहिए:
 
 <h2>📰 Latest Articles</h2>
 
@@ -236,226 +82,87 @@ Online Earning, Sports और Entertainment तक —
     <a class="read" href="#article1">पढ़ें</a>
 </div>
 
+<div class="card">
+    <div class="category">📱 Technology</div>
+    <h3>मोबाइल धीमा हो गया है? तेज करने के 10 तरीके</h3>
+    <p>अपने मोबाइल की performance बेहतर करने के आसान उपाय।</p>
+    <a class="read" href="#article2">पढ़ें</a>
+</div>
 
+<div class="card">
+    <div class="category">💼 Jobs</div>
+    <h3>12वीं पास युवाओं के लिए नौकरी ढूँढने के आसान तरीके</h3>
+    <p>Job search और interview के लिए उपयोगी जानकारी।</p>
+    <a class="read" href="#article3">पढ़ें</a>
+</div>
 
-<section class="article" id="article1">
-<h2>🔥 आज की वायरल खबरों की जानकारी कैसे पाएं?</h2>
-<p>
-सोशल मीडिया पर रोज बहुत सारी खबरें वायरल होती हैं।
-हर वायरल खबर सही हो यह जरूरी नहीं है।
-</p>
-<h3>खबर verify कैसे करें?</h3>
-<p>
-खबर की तारीख देखें, original source देखें और
-कम से कम दो भरोसेमंद sources से जानकारी मिलाएं।
-</p>
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
+<div class="card">
+    <div class="category">💰 Online Earning</div>
+    <h3>घर बैठे ऑनलाइन पैसे कमाने के 7 तरीके</h3>
+    <p>Blogging, YouTube, Freelancing और अन्य वैध तरीके।</p>
+    <a class="read" href="#article4">पढ़ें</a>
+</div>
 
-<section class="article" id="article2">
-<h2>📱 मोबाइल धीमा हो गया है? तेज करने के 10 तरीके</h2>
-<p>
-अगर मोबाइल slow हो गया है तो सबसे पहले अनावश्यक
-apps और files हटाएं।
-</p>
-<h3>कुछ आसान उपाय</h3>
-<p>
-Storage खाली रखें, apps update करें, background apps
-कम करें और समय-समय पर मोबाइल restart करें।
-</p>
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
+<div class="card">
+    <div class="category">📱 Technology</div>
+    <h3>पुराने मोबाइल को नया जैसा बनाने के 8 तरीके</h3>
+    <p>Storage, apps और battery से जुड़े आसान सुझाव।</p>
+    <a class="read" href="#article5">पढ़ें</a>
+</div>
 
-<section class="article" id="article3">
-<h2>💼 12वीं पास युवाओं के लिए नौकरी ढूँढने के आसान तरीके</h2>
-<p>
-एक अच्छा resume बनाएं और अपनी skills को साफ तरीके से
-लिखें।
-</p>
-<p>
-Verified job websites और कंपनियों की official career
-websites पर vacancies देखें।
-</p>
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
-
-<section class="article" id="article4">
-<h2>💰 घर बैठे ऑनलाइन पैसे कमाने के 7 तरीके</h2>
-<p>
-इंटरनेट से कमाई के कई वैध तरीके हैं। लेकिन किसी भी
-platform पर पैसे देने से पहले उसकी जांच जरूर करें।
-</p>
-<h3>1. Blogging</h3>
-<p>अपनी website पर useful और original articles लिखें।</p>
-
-<h3>2. YouTube</h3>
-<p>अपने knowledge या skill से videos बनाएं।</p>
-
-<h3>3. Freelancing</h3>
-<p>Writing, editing, design और दूसरे skills से काम करें।</p>
-
-<h3>4. Online Teaching</h3>
-<p>जिस विषय में जानकारी है उसे online पढ़ाएं।</p>
-
-<h3>5. Affiliate Marketing</h3>
-<p>Verified affiliate programs से commission कमाया जा सकता है।</p>
-
-<p>
-⚠️ पैसे कमाने के नाम पर advance payment मांगने वाले
-फर्जी offers से सावधान रहें।
-</p>
-
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
-
-<section class="article" id="article5">
-<h2>📱 पुराने मोबाइल को नया जैसा बनाने के 8 तरीके</h2>
-<p>
-अनावश्यक apps हटाएं, storage खाली रखें और software
-updates install करें।
-</p>
-<p>
-मोबाइल को ज्यादा गर्म होने से बचाएं और जरूरी data का
-backup रखें।
-</p>
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
-
-<section class="article" id="article6">
-<h2>🏏 क्रिकेट मैच में टीम की जीत की संभावना कैसे समझें?</h2>
-<p>
-Team की recent form, playing XI, pitch, weather और
-venue record जैसे factors देखें।
-</p>
-<p>
-सिर्फ prediction के आधार पर पैसे लगाने से बचें।
-</p>
-<a class="back" href="#home">← वापस जाएँ</a>
-</section>
-
-</main>
-<section class="article" id="about">
-<h2>About Us</h2>
-
-<p>
-<strong>Daily Jankari</strong> एक हिंदी जानकारी वाली वेबसाइट है।
-हमारा उद्देश्य Technology, Jobs, Online Earning, Sports,
-Trending और Entertainment से जुड़ी उपयोगी जानकारी सरल हिंदी में
-पाठकों तक पहुँचाना है।
-</p>
-
-<p>
-हम कोशिश करते हैं कि जानकारी आसान भाषा में और उपयोगी तरीके से
-प्रस्तुत की जाए।
-</p>
-
-<a class="back" href="#home">← Home पर वापस जाएँ</a>
-</section>
-
-
-<section class="article" id="contact">
-<h2>Contact Us</h2>
-
-<p>
-अगर आपको Daily Jankari से संबंधित कोई सुझाव, सवाल या feedback
-देना है, तो आप हमसे संपर्क कर सकते हैं।
-</p>
-
-<p>
-<strong>Email:</strong> अपनी email ID यहाँ लिखें
-</p>
-
-<p>
-कृपया email में अपने सवाल का विषय साफ-साफ लिखें।
-</p>
-
-<a class="back" href="#home">← Home पर वापस जाएँ</a>
-</section>
-
-
-<section class="article" id="privacy">
-<h2>Privacy Policy</h2>
-
-<p>
-Daily Jankari अपने visitors की privacy का सम्मान करता है।
-हम वेबसाइट को बेहतर बनाने के लिए सामान्य technical information
-का उपयोग कर सकते हैं।
-</p>
-
-<p>
-हम visitors की निजी जानकारी को बिना उचित कारण के बेचने या
-गलत तरीके से साझा करने का उद्देश्य नहीं रखते।
-</p>
-
-<p>
-भविष्य में वेबसाइट पर advertising या analytics services जोड़ी
-जा सकती हैं। ऐसी services अपनी privacy policies के अनुसार
-data का उपयोग कर सकती हैं।
-</p>
-
-<a class="back" href="#home">← Home पर वापस जाएँ</a>
-</section>
-
-
-<section class="article" id="disclaimer">
-<h2>Disclaimer</h2>
-
-<p>
-Daily Jankari पर दी गई जानकारी सामान्य informational purpose
-के लिए है।
-</p>
-
-<p>
-Jobs, earning, technology, sports और अन्य विषयों से संबंधित
-जानकारी को अंतिम या निश्चित सलाह नहीं माना जाना चाहिए।
-महत्वपूर्ण निर्णय लेने से पहले official और विश्वसनीय sources
-से जानकारी verify करें।
-</p>
-
-<p>
-हम किसी third-party website, service या offer की पूर्ण
-गारंटी नहीं देते।
-</p>
-
-<a class="back" href="#home">← Home पर वापस जाएँ</a>
-</section>
-<footer>
-<div class="container">
-
-<p>
-<a href="#home">Home</a>
-<a href="#home">About Us</a>
-<a href="#home">Contact Us</a>
-<a href="#home">Privacy Policy</a>
-<a href="#home">Disclaimer</a>
-</p>
-
-<p>© 2026 Daily Jankari — All Rights Reserved.</p>
+<div class="card">
+    <div class="category">🏏 Sports</div>
+    <h3>क्रिकेट मैच में टीम की जीत की संभावना कैसे समझें?</h3>
+    <p>Form, pitch और team combination जैसे factors।</p>
+    <a class="read" href="#article6">पढ़ें</a>
+</div>
 
 </div>
-</footer>
 
-<script>
-function searchArticles(){
+इसके बाद ही यह शुरू होना चाहिए:
 
-let text=document.getElementById("search").value.toLowerCase();
+<section class="article" id="article1">
 
-let cards=document.querySelectorAll(".card");
+Article sections:
+- article1 Trending
+- article2 Mobile slow
+- article3 Jobs
+- article4 Online Earning
+- article5 Old Mobile
+- article6 Cricket
 
-cards.forEach(function(card){
+इन सभी article sections को बनाए रखें और उनके existing content को delete न करें।
 
-let content=card.innerText.toLowerCase();
+खास तौर पर:
+Latest Articles के अंदर कोई <section class="article"> नहीं होना चाहिए।
 
-if(content.includes(text)){
-card.style.display="block";
-}else{
-card.style.display="none";
-}
+अंत में पूरी index.html की valid और clean HTML structure बनाओ।
 
-});
+सभी duplicate cards हटाओ।
 
-}
-</script>
+कोई duplicate:
+- Technology card
+- Jobs card
+- Online Earning card
+- Sports card
+नहीं होना चाहिए।
 
-</body>
-</html>
+Mobile और Blogging cards सबसे ऊपर रखें।
+
+Search bar और searchArticles() function को न हटाएं।
+
+Home page का existing design और CSS न बिगाड़ें।
+
+Google SEO के लिए पहले से मौजूद:
+- title
+- description
+- keywords
+- author
+- Google Search Console verification tag
+- Open Graph tags
+
+इनमें कोई बदलाव न करें।
+
+सिर्फ जरूरी HTML structure ठीक करें।
+
+अंत में पूरी corrected index.html code एक ही बार में दो।
